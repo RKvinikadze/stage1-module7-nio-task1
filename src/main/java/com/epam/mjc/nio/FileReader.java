@@ -5,8 +5,6 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-import java.sql.SQLOutput;
-
 
 public class FileReader {
 
@@ -27,8 +25,6 @@ public class FileReader {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        if (sb == null) return new Profile();
 
         String[] arr = sb.toString().split("\n");
         Profile profile = new Profile();
